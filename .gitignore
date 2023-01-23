@@ -1,3 +1,11 @@
+# Project Files
+formatted_JSON/
+formatted_TXT/
+raw/
+source/
+*.7z
+*.exe
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
