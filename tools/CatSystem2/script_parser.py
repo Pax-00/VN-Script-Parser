@@ -36,8 +36,9 @@ re_replace = {
     "multiple_speakers": [re.compile(r"^(\w+)\+\w+(\+\w+)*", re.MULTILINE), r'\1'],  # For lines with multiple speakers, remove all but first speaker
     "backtick": [re.compile(r'\\`', re.MULTILINE), '\''],  # Backtick often used for apostrophes
     "escape_characters": [re.compile(r'\\', re.MULTILINE), ''],  # Clean up escape characters
+    "empty_lines": [re.compile(r'\n\n', re.MULTILINE), '\n']
     # Final Cleanup
-    # "japanese": re.compile(r'[\u3040-\u30ff\u4e00-\u9fff]+', re.MULTILINE),  # Shouldn't be needed?
+    # "japanese": [re.compile(r'[\u3040-\u30ff\u4e00-\u9fff]+', re.MULTILINE), ''],  # Shouldn't be needed?
 }
 re_search = {
     "japanese": re.compile(r'[\u3040-\u30ff\u4e00-\u9fff]+', re.MULTILINE),
