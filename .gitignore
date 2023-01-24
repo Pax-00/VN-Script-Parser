@@ -5,6 +5,7 @@ raw/
 source/
 *.7z
 *.exe
+*.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
